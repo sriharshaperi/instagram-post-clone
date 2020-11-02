@@ -1,0 +1,141 @@
+.post {
+  background-color: white;
+  max-width: 500px;
+  border: 1px solid lightgray;
+  margin-bottom: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  width: 50%;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.post__header__details {
+  display: flex;
+  align-items: center;
+}
+
+.post__avatar {
+  margin-right: 10px;
+}
+
+.post__image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+.post__text {
+  font-weight: normal;
+  padding: 20px;
+}
+
+.post__commentbox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post__input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+  outline: none;
+}
+
+.post__button {
+  flex: 0;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+  background-color: white;
+  outline: none;
+}
+
+.post__text > strong {
+  margin-right: 5px;
+}
+
+.post__delete {
+  justify-content: space-between;
+}
+
+.post__comments {
+  padding: 20px;
+}
+
+.post__likes__and__date__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__likes {
+  padding: 20px;
+}
+
+.like__strong {
+  margin-right: 5px;
+}
+
+.post__commentUser {
+  margin-right: 10px;
+}
+
+.activeUserComment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.liked__users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.liked__user {
+  margin-right: 10px;
+}
+
+.liked__users__details {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .post {
+    width: 70%;
+  }
+
+  .likeIcon__transition {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 400px) {
+  .post {
+    width: 80%;
+  }
+  .likeIcon__transition {
+    display: none;
+  }
+}
+
+@media (max-width: 399px) {
+  .post {
+    width: 90%;
+  }
+  .likeIcon__transition {
+    display: none;
+  }
+}
